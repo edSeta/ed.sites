@@ -1,38 +1,63 @@
-        <!DOCTYPE html>
-        <html lang="pt-br">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>WestSide</title>
-        </head>
-        <body>
-            <h1>ola mundo</h1>
-            <img src="/imagem 5.jpg" alt="iojiojoij">
-           
-<hr>
-<p>
-    Entre o Café e o Caos
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-A cidade acorda antes do sol.
-Os passos apressados ecoam como um mantra moderno,
-e o cheiro de café recém-passado disputa espaço com a pressa.
-Lá fora, o mundo gira em uma velocidade que ninguém entende direito,
-mas todo mundo finge que acompanha.
+</head>
+<body>
+   <h1>Carousel</h1>
 
-Tem gente que acredita em sorte,
-outros em esforço,
-e uns tantos só seguem o fluxo —
-feito folha levada pelo vento, sem rumo, mas em movimento.
+   <div class="owl-carousel owl-theme">
+    <div> <img src="./img/pexels-pixabay-39855.jpg" alt=""> </div>
+    <div> <img src="./img/imagem 2.jpg" alt=""> </div>
+    <div> <img src="./img/imagem 3.jpg" alt=""> </div>
+    <div> <img src="./img/imagem 4.jpg" alt=""> </div>
+    <div> <img src="./img/imagem5.jpg" alt=""> </div>
+    <div> <img src="./img/imagem 3.jpg" alt=""> </div>
+    <div> <img src="./img/imagem 4.jpg" alt=""> </div>
+  </div>
 
-No meio de tudo isso, tem um instante pequeno, quase invisível:
-um olhar trocado no metrô,
-um sorriso sem motivo,
-uma brisa que bagunça o cabelo e conserta o pensamento.
 
-Às vezes, é no meio do caos que a gente encontra um pedaço de paz.
-E às vezes, tudo que a gente precisa é de um bom café
-e cinco minutos sem notificação nenhuma.
-</p>
-                
-        </body>
-        </html>
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+   <script>
+    var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+
+
+</script>
+</body>
+</html>
